@@ -65,7 +65,7 @@ for SIZE=10:10
             c=2; %matrix B
             current = [a,b,3];
             for k=1:SIZE
-                destination = [k,a,2];
+                destination = [a,k,2];
                 while (current(1) ~= destination(1) || current(2) ~= destination(2) || current(3) ~= destination(3))         
                     if (current(3) < destination (3))
                         zlink(current(1),current(2),current(3),SIZE)=zlink(current(1),current(2),current(3),SIZE)+1;
